@@ -1,19 +1,19 @@
 # Создаем index файл
 ```bash
-mkdir dist
-cd dist
+mkdir src
+cd src
 touch index.html
 ```
 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The Minimal React Webpack Babel Setup</title>
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+	<head>
+		<title>The Minimal React Webpack Babel Setup</title>
+	</head>
+	<body>
+		<div id="app"></div>
+	</body>
 </html>
 ```
 
@@ -36,14 +36,15 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			filename: 'create/index.html',
-			template: './src/app/create/index.html'
+			filename: 'index.html',
+			template: './src/index.html'
 		})
-	]
+	],
 	devServer: {
 		contentBase: './dist'
 	}
 };
+
 
 ```
 "scripts": {
@@ -54,8 +55,6 @@ module.exports = {
 ```
 
 ```bash
-mkdir src
-cd src
 touch index.js
 ```
 
@@ -70,6 +69,9 @@ touch index.js
 			exclude: /node_modules/,
 			use: ['babel-loader']
 		}]
+	},
+	resolve: {
+		extensions: ['*', '.js', '.jsx']
 	},
 ```
 
