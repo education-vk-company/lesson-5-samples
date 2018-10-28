@@ -58,6 +58,8 @@ module.exports = {
 touch index.js
 ```
 
+`console.log('Hello, World');`
+
 # Устанавливаем babel
 
 `npm install --save-dev @babel/core @babel/preset-env babel-loader @babel/preset-react`
@@ -94,7 +96,7 @@ touch index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'My Minimal React Webpack Babel Setup';
+const title = 'Hello, World';
 
 ReactDOM.render(
 	<div>{ title }</div>,
