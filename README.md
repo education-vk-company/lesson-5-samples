@@ -58,7 +58,7 @@ module.exports = {
 touch index.js
 ```
 
-`console.log('Hello, World!');`
+`console.log('Hello, world!');`
 
 # Устанавливаем babel
 
@@ -96,7 +96,7 @@ touch index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'Hello, World!';
+const title = 'Hello, world!';
 
 ReactDOM.render(
 	<div>{ title }</div>,
