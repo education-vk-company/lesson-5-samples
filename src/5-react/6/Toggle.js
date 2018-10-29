@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// State management
 export class Toggle extends Component {
 	constructor(props) {
 		super(props);

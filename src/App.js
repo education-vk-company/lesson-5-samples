@@ -20,6 +20,8 @@ import {
 
 	Toggle,
 
+	Greeting,
+	LoginControl,
 
 } from './5-react/';
 
@@ -38,6 +40,8 @@ class App extends Component {
 				<ClassComponent name="Sir" />
 				<ClockClass />
 				<Toggle />
+				<Greeting isLoggedIn={ false } />
+				<LoginControl />
 
 			</div>
 		);
