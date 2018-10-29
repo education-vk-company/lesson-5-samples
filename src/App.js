@@ -13,7 +13,11 @@ import {
 	tick,
 
 	FnComponent,
-	ClassComponent
+	ClassComponent,
+
+	tick2,
+
+	ClockClass
 
 } from './5-react/';
 
@@ -30,6 +34,7 @@ class App extends Component {
 				{ representationEl }
 				<FnComponent name="Martin" />
 				<ClassComponent name="Sir" />
+				<ClockClass />
 			</div>
 		);
 	}
