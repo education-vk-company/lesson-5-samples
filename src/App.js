@@ -23,6 +23,11 @@ import {
 	Greeting,
 	LoginControl,
 
+	NumberList,
+
+	NameForm
+
+
 } from './5-react/';
 
 class App extends Component {
@@ -42,7 +47,8 @@ class App extends Component {
 				<Toggle />
 				<Greeting isLoggedIn={ false } />
 				<LoginControl />
-
+				<NumberList numbers={ [1, 2, 3, 4, 5] } />
+				<NameForm />
 			</div>
 		);
 	}
