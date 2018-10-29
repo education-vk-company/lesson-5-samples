@@ -12,6 +12,8 @@ import {
 
 	tick,
 
+	FnComponent,
+	ClassComponent
 
 } from './5-react/';
 
@@ -26,6 +28,8 @@ class App extends Component {
 				{ childrenEl }
 				{ xssEl }
 				{ representationEl }
+				<FnComponent name="Martin" />
+				<ClassComponent name="Sir" />
 			</div>
 		);
 	}
