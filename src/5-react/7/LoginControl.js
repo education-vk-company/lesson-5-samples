@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Greeting } from './Greeting';
 
-
 function LoginButton(props) {
 	return (
 		<button onClick={ props.onClick }>
@@ -18,6 +17,8 @@ function LogoutButton(props) {
 	);
 }
 
+// element variables (button)
+// statefull component
 export class LoginControl extends Component {
 	constructor(props) {
 		super(props);
@@ -48,6 +49,11 @@ export class LoginControl extends Component {
 			<div>
 				<Greeting isLoggedIn={ isLoggedIn } />
 				{ button }
+
+				{/* inline if and logical & */}
+				{
+					true && <div>Some text zazaz</div>
+				}
 			</div>
 		);
 	}
