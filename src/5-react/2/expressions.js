@@ -13,7 +13,7 @@ export function getGreeting(user) {
 	if (user) {
 		return <h1>Hello, { formatName(user) }!</h1>;
 	}
-	return <h1>Hello, Stranger.</h1>;
+	return <h1>Hello, Sir.</h1>;
 }
 
 export const expression = (

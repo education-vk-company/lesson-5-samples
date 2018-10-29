@@ -4,7 +4,10 @@ import {
 	element,
 	expression,
 	getGreeting,
-	attributesEl
+	attributesEl,
+	childrenEl,
+	xssEl,
+	representationEl,
 } from './5-react/';
 
 class App extends Component {
@@ -15,6 +18,9 @@ class App extends Component {
 				{ expression }
 				{ getGreeting() }
 				{ attributesEl }
+				{ childrenEl }
+				{ xssEl }
+				{ representationEl }
 			</div>
 		);
 	}
