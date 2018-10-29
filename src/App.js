@@ -16,8 +16,10 @@ import {
 	ClassComponent,
 
 	tick2,
+	ClockClass,
 
-	ClockClass
+	Toggle,
+
 
 } from './5-react/';
 
@@ -35,6 +37,8 @@ class App extends Component {
 				<FnComponent name="Martin" />
 				<ClassComponent name="Sir" />
 				<ClockClass />
+				<Toggle />
+
 			</div>
 		);
 	}
