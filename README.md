@@ -54,9 +54,11 @@ module.exports = {
 },
 ```
 
-`
+
+```bash
 touch index.js
-`
+```
+
 
 `console.log('Hello, world!');`
 
