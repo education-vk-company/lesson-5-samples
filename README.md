@@ -44,7 +44,7 @@ module.exports = {
 		contentBase: './dist'
 	}
 };
-
+```
 
 ```
 "scripts": {
@@ -54,11 +54,9 @@ module.exports = {
 },
 ```
 
-
 ```bash
 touch index.js
 ```
-
 
 `console.log('Hello, world!');`
 
