@@ -25,9 +25,9 @@ import {
 
 	NumberList,
 
-	NameForm
+	NameForm,
 
-
+	Calculator
 } from './5-react/';
 
 class App extends Component {
@@ -49,6 +49,7 @@ class App extends Component {
 				<LoginControl />
 				<NumberList numbers={ [1, 2, 3, 4, 5] } />
 				<NameForm />
+				<Calculator />
 			</div>
 		);
 	}
