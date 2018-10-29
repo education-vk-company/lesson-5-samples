@@ -8,6 +8,7 @@ import {
 	childrenEl,
 	xssEl,
 	representationEl,
+	tick,
 } from './5-react/';
 
 class App extends Component {
