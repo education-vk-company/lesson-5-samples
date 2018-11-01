@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // State management
+// Handling Events
 export class Toggle extends Component {
 	constructor(props) {
 		super(props);
@@ -9,7 +10,6 @@ export class Toggle extends Component {
 		// This binding is necessary to make `this` work in the callback
 		this.handleClick = this.handleClick.bind(this);
 	}
-
 
 	// handleClick(param) {
 	handleClick() {
