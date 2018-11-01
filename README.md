@@ -6,7 +6,7 @@ mkdir frontend-react-app; cd $_
 
 ### 2. Создаем `package.json`
 ```bash
-npm i
+npm init
 ```
 ### 3. Создаем `index` файл
 
