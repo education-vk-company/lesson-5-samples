@@ -14,44 +14,63 @@ export class AppContext3 extends React.Component {
 
 		// Компонент App, который предоставляет начальные значения контекстов
 		return (
-			<ThemeContext.Provider value={theme}>
-				<UserContext.Provider value={signedInUser}>
-					<Layout />
-				</UserContext.Provider>
-			</ThemeContext.Provider>
+			<fieldset>
+				<legend>
+					AppContext3
+				</legend>
+				This is where initial data is stored
+				<ThemeContext.Provider value={theme}>
+					<UserContext.Provider value={signedInUser}>
+						<Layout />
+					</UserContext.Provider>
+				</ThemeContext.Provider>
+			</fieldset>
 		);
 	}
 }
 
 function Layout() {
 	return (
-		<div>
-			<Content />
-		</div>
+		<fieldset>
+			<legend>
+				Layout
+			</legend>
+			<div>
+				<Content />
+			</div>
+		</fieldset>
 	);
 }
 
 // Компонент, который может использовать несколько контекстов
 function Content() {
 	return (
-		<ThemeContext.Consumer>
-			{theme => (
-				<UserContext.Consumer>
-					{user => (
-						<ProfilePage user={user} theme={theme} />
-					)}
-				</UserContext.Consumer>
-			)}
-		</ThemeContext.Consumer>
+		<fieldset>
+			<legend>
+				Content
+			</legend>
+			<ThemeContext.Consumer>
+				{theme => (
+					<UserContext.Consumer>
+						{user => (
+							<ProfilePage user={user} theme={theme} />
+						)}
+					</UserContext.Consumer>
+				)}
+			</ThemeContext.Consumer>
+		</fieldset>
 	);
 }
 
 function ProfilePage(props) {
 	console.log(props);
 	return (
-		<div>
-			<span>User: {props.user.name}</span><br/>
-			<span>Theme: {props.theme}</span>
-		</div>
+		<fieldset>
+			<legend>ProfilePage</legend>
+			<div>
+				<span>User: {props.user.name}</span><br/>
+				<span>Theme: {props.theme}</span>
+			</div>
+		</fieldset>
 	)
 }
