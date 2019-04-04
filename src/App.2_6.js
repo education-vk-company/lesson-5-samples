@@ -5,6 +5,7 @@ import {
 	AppContext2,
 	AppContext3,
 	AppPortal,
+	AppRef
 } from './2_6-react/';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 				<AppContext2 />
 				<AppContext3 />
 				<AppPortal />
+				<AppRef />
 			</div>
 		);
 	}
