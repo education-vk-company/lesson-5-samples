@@ -6,7 +6,9 @@ import {
 	AppContext3,
 	AppPortal,
 	AppRef,
-	AppPropTypes
+	AppPropTypes,
+	AppHookState,
+	AppHookEffect,
 } from './2_6-react/';
 
 class App extends Component {
@@ -19,6 +21,8 @@ class App extends Component {
 				<AppPortal />
 				<AppRef />
 				<AppPropTypes />
+				<AppHookState />
+				<AppHookEffect />
 			</div>
 		);
 	}
