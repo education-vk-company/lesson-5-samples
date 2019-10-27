@@ -1,3 +1,3 @@
-export * from './app';
-export * from './theme-context';
-export * from './theme-toggler-button';
+export * from './App';
+export * from './ThemeContext';
+export * from './ThemeTogglerButton';

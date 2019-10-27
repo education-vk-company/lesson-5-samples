@@ -1,11 +1,11 @@
 import React from 'react';
-import {ThemeContext, themes} from './theme-context';
-import ThemedButton from './themed-button';
+import {ThemeContext, themes} from './ThemeContext';
+import ThemedButton from './ThemedButton';
 
 // Промежуточный компонент, который использует ThemedButton
 function Toolbar(props) {
 	return (
-		<ThemedButton onClick={props.changeTheme}>
+		<ThemedButton onClick={props.onChangeTheme}>
 			Change Theme
 		</ThemedButton>
 	);
@@ -35,8 +35,8 @@ export class AppContext extends React.Component {
 		// использует тёмную UI-тему из значения по умолчанию
 		return (
 			<nav>
-				<ThemeContext.Provider value={this.state.theme}>
-					<Toolbar changeTheme={this.toggleTheme} />
+				<ThemeContext.Provider value={ this.state.theme }>
+					<Toolbar onChangeTheme={ this.toggleTheme } />
 				</ThemeContext.Provider>
 				<div>
 					<ThemedButton>Default theme</ThemedButton>

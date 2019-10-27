@@ -6,7 +6,7 @@ export function AppHookState() {
 
 	return (
 		<div>
-			<p>Вы кликнули {count} раз(а)</p>
+			<p>Вы кликнули { count } раз(а)</p>
 			<button onClick={() => setCount(count + 1)}>
 				Нажми на меня
 			</button>

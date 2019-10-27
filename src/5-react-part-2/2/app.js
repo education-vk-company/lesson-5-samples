@@ -1,7 +1,7 @@
 import React from 'react';
-import {ThemeContext} from './theme-context';
-import ThemeTogglerButton from './theme-toggler-button';
-import {themes} from '../1';
+import { ThemeContext } from './ThemeContext';
+import ThemeTogglerButton from './ThemeTogglerButton';
+import { themes } from '../1';
 
 export class AppContext2 extends React.Component {
 	constructor(props) {
@@ -27,7 +27,7 @@ export class AppContext2 extends React.Component {
 	render() {
 		// Всё состояние передаётся в качестве значения контекста
 		return (
-			<ThemeContext.Provider value={this.state}>
+			<ThemeContext.Provider value={ this.state }>
 				<Content />
 			</ThemeContext.Provider>
 		);

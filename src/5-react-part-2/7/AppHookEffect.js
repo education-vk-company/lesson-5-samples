@@ -4,15 +4,18 @@ export function AppHookEffect() {
 	const [count, setCount] = useState(0);
 	const [test, setTest] = useState(0);
 
-	// Аналогично componentDidMount и componentDidUpdate:
+	// Равносильно componentDidMount,
+	// componentDidUpdate и componentWillUnmount:
 	useEffect(() => {
 		// Обновляем заголовок документа с помощью API браузера
 		document.title = `Вы нажали ${count} раз`;
 		console.log(count);
+
+		// clean up function a.k.a. componentWillUnmount
 		// return () => {
 
 		// };
-	}, /*[count]*/);
+	}, /*[count]*/); // Only re-run the effect if count changes
 
 	const handleClick = () => {
 		setCount(count < 5 ? count + 1 : count);

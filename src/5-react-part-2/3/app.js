@@ -1,5 +1,6 @@
 import React from 'react';
-import {themes} from '../1';
+import { themes } from '../1';
+
 // Контекст UI-темы, со светлым значением по умолчанию
 const ThemeContext = React.createContext('light');
 
@@ -10,7 +11,7 @@ const UserContext = React.createContext({
 
 export class AppContext3 extends React.Component {
 	render() {
-		const [signedInUser, theme] = [{name: 'Martin'}, 'light'];
+		const [signedInUser, theme] = [{ name: 'Martin' }, 'light'];
 
 		// Компонент App, который предоставляет начальные значения контекстов
 		return (
@@ -19,8 +20,8 @@ export class AppContext3 extends React.Component {
 					AppContext3
 				</legend>
 				This is where initial data is stored
-				<ThemeContext.Provider value={theme}>
-					<UserContext.Provider value={signedInUser}>
+				<ThemeContext.Provider value={ theme }>
+					<UserContext.Provider value={ signedInUser }>
 						<Layout />
 					</UserContext.Provider>
 				</ThemeContext.Provider>
@@ -50,26 +51,28 @@ function Content() {
 				Content
 			</legend>
 			<ThemeContext.Consumer>
-				{theme => (
+				{ theme => (
 					<UserContext.Consumer>
-						{user => (
-							<ProfilePage user={user} theme={theme} />
-						)}
+						{ user => (
+							<ProfilePage user={ user } theme={ theme } />
+						) }
 					</UserContext.Consumer>
-				)}
+				) }
 			</ThemeContext.Consumer>
 		</fieldset>
 	);
 }
 
 function ProfilePage(props) {
-	console.log(props);
+	const { user, theme } = props;
+	// console.log(props);
+
 	return (
 		<fieldset>
 			<legend>ProfilePage</legend>
 			<div>
-				<span>User: {props.user.name}</span><br/>
-				<span>Theme: {props.theme}</span>
+				<span>User: { user.name }</span><br/>
+				<span>Theme: { theme }</span>
 			</div>
 		</fieldset>
 	)

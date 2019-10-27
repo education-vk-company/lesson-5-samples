@@ -21,7 +21,7 @@ export class AppRef extends React.Component {
 			<div>
 				<input
 					type="text"
-					ref={this.textInput} />
+					ref={ this.textInput } />
 
 				<input
 					type="button"
