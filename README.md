@@ -56,7 +56,8 @@ module.exports = {
 	],
 	devServer: {
 		contentBase: './dist'
-	}
+	},
+	devtool: 'inline-source-map'
 };
 ```
 ### 6. Добавляем npm скрипты в `package.json`
@@ -66,7 +67,7 @@ module.exports = {
     "scripts": {
     	"start": "npm run build && npm run serve",
     	"serve": "webpack-dev-server --config ./webpack.config.js --mode development",
-	    "build": "webpack --config ./webpack.config.js --mode development"
+    	"build": "webpack --config ./webpack.config.js --mode development"
     },
     ...
 }
