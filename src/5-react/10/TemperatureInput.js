@@ -8,6 +8,7 @@ const scaleNames = {
 export class TemperatureInput extends Component {
 	constructor(props) {
 		super(props);
+		// comment the line below to see why binding is necessary
 		this.handleChange = this.handleChange.bind(this);
 	}
 

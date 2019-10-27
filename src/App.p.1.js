@@ -8,6 +8,7 @@ import {
 	attributesEl,
 	childrenEl,
 	xssEl,
+	xssEl2,
 	representationEl,
 
 	tick,
@@ -40,6 +41,7 @@ class App extends Component {
 				{ attributesEl }
 				{ childrenEl }
 				{ xssEl }
+				{/* { xssEl2 } */}
 				{ representationEl }
 				<FnComponent name="Martin" />
 				<ClassComponent name="Sir" />

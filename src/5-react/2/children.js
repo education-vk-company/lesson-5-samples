@@ -1,5 +1,6 @@
 import React from 'react';
 
+// div or React.Fragment
 export const childrenEl = (
 	<div>
 		<h1>Hello, Sir!</h1>

@@ -8,6 +8,7 @@ export class Toggle extends Component {
 		this.state = { isToggleOn: true };
 
 		// This binding is necessary to make `this` work in the callback
+		// when it's passed to children elements
 		this.handleClick = this.handleClick.bind(this);
 	}
 
