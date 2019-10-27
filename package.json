@@ -11,13 +11,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/frontend-track-mail-ru/frontend-track-lecture-5-samples.git"
+		"url": "git+https://github.com/frontend-track-mail-ru/lesson-5-samples.git"
 	},
 	"author": "Martin Komitsky",
 	"bugs": {
-		"url": "https://github.com/frontend-track-mail-ru/frontend-track-lecture-5-samples/issues"
+		"url": "https://github.com/frontend-track-mail-ru/lesson-5-samples/issues"
 	},
-	"homepage": "https://github.com/frontend-track-mail-ru/frontend-track-lecture-5-samples#readme",
+	"homepage": "https://github.com/frontend-track-mail-ru/lesson-5-samples#readme",
 	"devDependencies": {
 		"@babel/core": "7.6.4",
 		"@babel/preset-env": "7.6.3",
