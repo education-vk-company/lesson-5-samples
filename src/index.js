@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import App from './App';
-import App2 from './App.2_6.js';
+import App from './App.p.1';
+import App2 from './App.p.2';
 
 ReactDOM.render(
-	<App2 />,
+	<React.Fragment>
+		<App />
+		<App2 />
+	</React.Fragment>,
 	document.getElementById('app')
 );

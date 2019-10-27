@@ -28,7 +28,7 @@ import {
 	NameForm,
 
 	Calculator
-} from './5-react/';
+} from './5-react';
 
 class App extends Component {
 	render() {

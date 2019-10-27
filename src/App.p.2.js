@@ -9,7 +9,7 @@ import {
 	AppPropTypes,
 	AppHookState,
 	AppHookEffect,
-} from './2_6-react/';
+} from './5-react-part-2';
 
 class App extends Component {
 	render() {
