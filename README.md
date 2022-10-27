@@ -64,9 +64,6 @@ module.exports = {
 			template: './src/index.html'
 		})
 	],
-	devServer: {
-		contentBase: './dist'
-	},
 	devtool: 'inline-source-map'
 };
 ```
