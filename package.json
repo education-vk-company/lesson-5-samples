@@ -1,38 +1,28 @@
 {
-	"name": "frontend-track-lecture-5-samples",
-	"version": "1.0.0",
-	"description": "Samples for frontend-track lectures",
-	"main": "index.js",
-	"scripts": {
-		"start": "npm run build && npm run serve",
-		"serve": "webpack-dev-server --no-cache --config ./webpack.config.js --mode development",
-		"build": "webpack --config ./webpack.config.js --mode development",
-		"watch": "webpack  --watch --config ./webpack.config.js --mode development"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/track-mail-ru/lesson-5-samples.git"
-	},
-	"author": "Martin Komitsky",
-	"bugs": {
-		"url": "https://github.com/track-mail-ru/lesson-5-samples/issues"
-	},
-	"homepage": "https://github.com/track-mail-ru/lesson-5-samples#readme",
-	"devDependencies": {
-		"@babel/core": "7.6.4",
-		"@babel/preset-env": "7.6.3",
-		"@babel/preset-react": "7.6.3",
-		"babel-loader": "8.0.6",
-		"css-loader": "^3.2.0",
-		"html-webpack-plugin": "3.2.0",
-		"style-loader": "^1.0.0",
-		"webpack": "4.41.2",
-		"webpack-cli": "3.3.9",
-		"webpack-dev-server": "3.9.0"
-	},
-	"dependencies": {
-		"prop-types": "^15.7.2",
-		"react": "16.11.0",
-		"react-dom": "16.11.0"
-	}
+  "name": "lesson5",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "vite": "^5.4.8"
+  }
 }
