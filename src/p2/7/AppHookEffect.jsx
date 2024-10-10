@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-export function AppHookEffect() {
+export const AppHookEffect = () => {
 	const [count, setCount] = useState(0);
 	const [test, setTest] = useState(0);
 

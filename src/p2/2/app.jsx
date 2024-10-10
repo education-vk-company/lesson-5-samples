@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
-import { ThemeContext } from './ThemeContext';
+import { ThemeContext, themes } from './ThemeContext';
 import ThemeTogglerButton from './ThemeTogglerButton';
-import { themes } from '../1';
 
 const Content = () => (
 	<div>
@@ -13,8 +12,10 @@ const Content = () => (
 export const AppContext2 = () => {
 	const [theme, setTheme] = useState(themes.light)
 
-	const [toggleTheme, setToggleTheme] = useState(() => {
-		setTheme(theme === themes.dark ? themes.light : themes.dark)
+	const [toggleTheme, setToggleTheme] = useState(() => () => {
+		setTheme((currState) => {
+			currState === themes.dark ? themes.light : themes.dark
+		})
 	})
 
 	// Всё состояние передаётся в качестве значения контекста

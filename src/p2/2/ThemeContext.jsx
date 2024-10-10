@@ -1,5 +1,15 @@
 import { createContext } from 'react';
-import { themes } from '../1';
+
+export const themes = {
+	light: {
+		color: '#000000',
+		background: '#eeeeee',
+	},
+	dark: {
+		color: '#ffffff',
+		background: '#222222',
+	},
+};
 
 // Убедитесь, что форма значения по умолчанию,
 // передаваемого в createContext, совпадает с формой объекта,

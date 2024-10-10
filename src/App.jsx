@@ -1,23 +1,28 @@
 import {
+  AppModal,
+  AppPropTypes,
+  AppRef,
+  Context,
+  ExtendedContext,
+  HookEffect,
+  HookState,
+  MultipleContext,
+} from './p2'
+import {
+  Eight,
+  Fifth,
   First,
   Fourth,
+  Nine,
   Second1,
   Second2,
   Second4,
-  Third1,
-  Third2,
-  Fifth,
+  Seven,
   Six1,
   Six2,
-  Seven,
-  Eight,
-  Nine,
+  Third1,
+  Third2,
 } from './p1'
-
-import {
-  Context,
-  ExtendedContext,
-} from './p2'
 
 const App = () => (
   <div>
@@ -54,7 +59,13 @@ const App = () => (
 
     {/*==============================================================*/}
     {/* <Context /> */}
-    <ExtendedContext />
+    {/* <ExtendedContext /> */}
+    {/* <MultipleContext /> */}
+    {/* <AppModal /> */}
+    {/* <AppRef /> */}
+    {/* <AppPropTypes /> */}
+    {/* <HookState /> */}
+    {/* <HookEffect /> */}
   </div>
 );
 

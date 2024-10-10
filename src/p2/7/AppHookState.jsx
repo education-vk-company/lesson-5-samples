@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export function AppHookState() {
+export const AppHookState = () => {
 	// Объявление новой переменной состояния «count»
 	const [count, setCount] = useState(0);
 
