@@ -14,6 +14,11 @@ import {
   Nine,
 } from './p1'
 
+import {
+  Context,
+  ExtendedContext,
+} from './p2'
+
 const App = () => (
   <div>
     {/* <First /> */}
@@ -46,6 +51,10 @@ const App = () => (
 
     {/* Temperature calculator */}
     {/* <Nine /> */}
+
+    {/*==============================================================*/}
+    {/* <Context /> */}
+    <ExtendedContext />
   </div>
 );
 
