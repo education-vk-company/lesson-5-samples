@@ -18,11 +18,11 @@ const LogoutButton = ({ onClick }) => (
 export const LoginControl = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-	const handleLoginClick = () => {
+	const handleLoginClick = (event) => {
 		setIsLoggedIn(true);
 	}
 
-	const handleLogoutClick = () => {
+	const handleLogoutClick = (event) => {
 		setIsLoggedIn(false);
 	}
 

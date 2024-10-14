@@ -6,14 +6,14 @@ import { Modal } from './Modal';
 // render it wherever we like without needing to know that it's
 // implemented with portals.
 export const AppPortal = () => {
-	const [showModal, setShowMoal] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 
 	const handleShow = () => {
-		setShowMoal(true);
+		setShowModal(true);
 	}
 
 	const handleHide = () => {
-		setShowMoal(false);
+		setShowModal(false);
 	}
 
 	// Show a Modal on click.

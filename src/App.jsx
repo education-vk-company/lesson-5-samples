@@ -16,6 +16,7 @@ import {
   Nine,
   Second1,
   Second2,
+  Second3,
   Second4,
   Seven,
   Six1,
@@ -27,25 +28,23 @@ import {
 const App = () => (
   <div>
     {/* <First /> */}
-
-
     {/* <Second1 /> */}
-    {/* <Second2/> */}
-    {/* <Second3/> */}
-    {/* <Second4/> */}
+    {/* <Second2 /> */}
+    {/* <Second3 /> */}
+    {/* <Second4 /> */}
 
 
     {/* <Third1 /> */}
     {/* <Third2 /> */}
 
     {/* Lifecycle */}
-    {/* <Fourth />  */}
+    {/* <Fourth /> */}
 
     {/* Event binding */}
     {/* <Fifth /> */}
 
     {/* Conditional rendering */}
-    {/* <Six1 isLoggedIn /> */}
+    {/* <Six1 isLoggedIn={false} /> */}
     {/* <Six2 /> */}
 
     {/* Lists */}
@@ -58,6 +57,7 @@ const App = () => (
     {/* <Nine /> */}
 
     {/*==============================================================*/}
+
     {/* <Context /> */}
     {/* <ExtendedContext /> */}
     {/* <MultipleContext /> */}

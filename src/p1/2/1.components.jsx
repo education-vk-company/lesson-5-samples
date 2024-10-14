@@ -9,5 +9,3 @@ export const Wrapper = (
     <MyButton /> {/* наш компонент выше */}
   </div>
 );
-
-

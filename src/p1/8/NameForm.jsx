@@ -20,6 +20,7 @@ export const NameForm = (props) => {
 				<input
 					type="text"
 					value={ value }
+					name="name"
 					onChange={ handleChange }
 				/>
 			</label>
